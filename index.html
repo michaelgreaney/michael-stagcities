@@ -25,7 +25,7 @@
             transition: transform 0.6s;
             transform-style: preserve-3d;
         }
-        .flip-card:hover .flip-card-inner {
+        .flip-card-inner.is-flipped {
             transform: rotateY(180deg);
         }
         .flip-card-front, .flip-card-back {
@@ -80,8 +80,8 @@
     <div id="home">
         <div class="hero-bg">
             <div class="bg-black bg-opacity-60 min-h-screen flex flex-col items-center justify-center p-4 text-center">
-                <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tight">THE STAG SHOWDOWN</h1>
-                <p class="text-lg md:text-2xl max-w-3xl">Six cities. One SRS stag party to plan. Explore the contenders below and choose your destination.</p>
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tight">THE STAG DO SHOWDOWN</h1>
+                <p class="text-lg md:text-2xl max-w-3xl">Six cities. Two weekends. One legendary stag party to plan. Explore the contenders below and choose your destination.</p>
                 <p class="text-md md:text-xl mt-2 font-semibold">Potential Dates: 31st Jan - 2nd Feb 2026  OR  7th - 9th Feb 2026</p>
             </div>
         </div>
@@ -93,11 +93,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner shadow-lg">
                         <div class="flip-card-front">
-                            <span class="text-6xl font-bold">Option 1</span>
+                            <div class="flex flex-col items-center justify-center h-full p-4">
+                                <span class="text-6xl font-bold">Option 1</span>
+                                <button class="flip-button mt-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded z-10">Reveal</button>
+                            </div>
                         </div>
-                        <div class="flip-card-back">
+                        <div class="flip-card-back p-4">
                             <h3 class="text-3xl font-bold mb-4">Lisbon</h3>
                             <a href="#lisbon" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">Explore Details</a>
+                            <button class="flip-button mt-4 bg-gray-600 hover:bg-gray-700 text-white font-bold py-1 px-3 rounded text-sm">Flip Back</button>
                         </div>
                     </div>
                 </div>
@@ -105,11 +109,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner shadow-lg">
                         <div class="flip-card-front">
-                            <span class="text-6xl font-bold">Option 2</span>
+                            <div class="flex flex-col items-center justify-center h-full p-4">
+                                <span class="text-6xl font-bold">Option 2</span>
+                                <button class="flip-button mt-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded z-10">Reveal</button>
+                            </div>
                         </div>
-                        <div class="flip-card-back">
+                        <div class="flip-card-back p-4">
                             <h3 class="text-3xl font-bold mb-4">Cologne</h3>
                             <a href="#cologne" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">Explore Details</a>
+                            <button class="flip-button mt-4 bg-gray-600 hover:bg-gray-700 text-white font-bold py-1 px-3 rounded text-sm">Flip Back</button>
                         </div>
                     </div>
                 </div>
@@ -117,11 +125,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner shadow-lg">
                         <div class="flip-card-front">
-                            <span class="text-6xl font-bold">Option 3</span>
+                            <div class="flex flex-col items-center justify-center h-full p-4">
+                                <span class="text-6xl font-bold">Option 3</span>
+                                <button class="flip-button mt-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded z-10">Reveal</button>
+                            </div>
                         </div>
-                        <div class="flip-card-back">
+                        <div class="flip-card-back p-4">
                             <h3 class="text-3xl font-bold mb-4">Warsaw</h3>
                             <a href="#warsaw" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">Explore Details</a>
+                            <button class="flip-button mt-4 bg-gray-600 hover:bg-gray-700 text-white font-bold py-1 px-3 rounded text-sm">Flip Back</button>
                         </div>
                     </div>
                 </div>
@@ -129,11 +141,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner shadow-lg">
                         <div class="flip-card-front">
-                            <span class="text-6xl font-bold">Option 4</span>
+                            <div class="flex flex-col items-center justify-center h-full p-4">
+                                <span class="text-6xl font-bold">Option 4</span>
+                                <button class="flip-button mt-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded z-10">Reveal</button>
+                            </div>
                         </div>
-                        <div class="flip-card-back">
+                        <div class="flip-card-back p-4">
                             <h3 class="text-3xl font-bold mb-4">Krakow</h3>
                             <a href="#krakow" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">Explore Details</a>
+                            <button class="flip-button mt-4 bg-gray-600 hover:bg-gray-700 text-white font-bold py-1 px-3 rounded text-sm">Flip Back</button>
                         </div>
                     </div>
                 </div>
@@ -141,11 +157,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner shadow-lg">
                         <div class="flip-card-front">
-                            <span class="text-6xl font-bold">Option 5</span>
+                            <div class="flex flex-col items-center justify-center h-full p-4">
+                                <span class="text-6xl font-bold">Option 5</span>
+                                <button class="flip-button mt-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded z-10">Reveal</button>
+                            </div>
                         </div>
-                        <div class="flip-card-back">
+                        <div class="flip-card-back p-4">
                             <h3 class="text-3xl font-bold mb-4">Bucharest</h3>
                             <a href="#bucharest" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">Explore Details</a>
+                            <button class="flip-button mt-4 bg-gray-600 hover:bg-gray-700 text-white font-bold py-1 px-3 rounded text-sm">Flip Back</button>
                         </div>
                     </div>
                 </div>
@@ -153,11 +173,15 @@
                 <div class="flip-card">
                     <div class="flip-card-inner shadow-lg">
                         <div class="flip-card-front">
-                            <span class="text-6xl font-bold">Option 6</span>
+                            <div class="flex flex-col items-center justify-center h-full p-4">
+                                <span class="text-6xl font-bold">Option 6</span>
+                                <button class="flip-button mt-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded z-10">Reveal</button>
+                            </div>
                         </div>
-                        <div class="flip-card-back">
+                        <div class="flip-card-back p-4">
                             <h3 class="text-3xl font-bold mb-4">Sofia</h3>
                             <a href="#sofia" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">Explore Details</a>
+                            <button class="flip-button mt-4 bg-gray-600 hover:bg-gray-700 text-white font-bold py-1 px-3 rounded text-sm">Flip Back</button>
                         </div>
                     </div>
                 </div>
@@ -378,8 +402,23 @@
     <footer class="bg-gray-900 text-center p-4">
         <p>&copy; 2025 Stag Party Planning Committee. Choose wisely.</p>
     </footer>
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const flipButtons = document.querySelectorAll('.flip-button');
+    
+            flipButtons.forEach(button => {
+                button.addEventListener('click', function (event) {
+                    // Stop the click from triggering other things, like link navigation if it were inside one
+                    event.stopPropagation();
+                    
+                    const cardInner = this.closest('.flip-card-inner');
+                    if (cardInner) {
+                        cardInner.classList.toggle('is-flipped');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
-
 
